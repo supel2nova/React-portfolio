@@ -3,13 +3,14 @@ import styled from "styled-components";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-import img1 from "../assets/Images/11.webp";
-import img2 from "../assets/Images/12.webp";
-import img3 from "../assets/Images/13.webp";
-import img4 from "../assets/Images/14.webp";
+import img1 from "../assets/Images/project01.png";
+import img2 from "../assets/Images/project02.png";
+import img3 from "../assets/Images/project03.png";
+import img4 from "../assets/Images/project04.png";
 
 const Section = styled.section`
   min-height: 100vh;
+  max-height: 100vh;
   width: 100vw;
   margin: 0 auto;
 
@@ -64,6 +65,7 @@ const Title = styled.h1`
 
   @media (max-width: 64em) {
     font-size: ${(props) => props.theme.fontxxl};
+    left: 3%;
   }
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontxl};
@@ -79,7 +81,9 @@ const Text = styled.div`
   top: 0;
   right: 0;
   z-index: 11;
-
+  a {
+    color: rgb(106, 90, 205);
+  }
   @media (max-width: 48em) {
     display: none;
   }
@@ -119,6 +123,10 @@ const Item = styled.div`
     width: 100%;
     height: auto;
     z-index: 5;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 1rem;
   }
 `;
 
@@ -201,24 +209,66 @@ const NewArrival = () => {
       </Title>
 
       <Container ref={ScrollingRef}>
-        <Product img={img1} title="Denim" />
-        <Product img={img2} title="Cool Dresses" />
-        <Product img={img3} title="Jackets" />
-        <Product img={img4} title="T-shirts" />
+        <Item>
+          <Product img={img1} title="BMI Calculator" />
+          <Product img={img2} title="Jammming" />
+          <Product img={img3} title="Find Your Hat" />
+          <Product img={img4} title="Landing page with Tailwind" />
+        </Item>
       </Container>
 
-      <Text data-scroll data-scroll-speed="-4">
-        There is new collection available for cool clothes in all sizes. This
-        collection is a great way to find a new look for you. It offers a
-        variety of cool apparel styles to fit your taste, while you can also
-        find some cool clothes that you can wear everyday.
+      <Text data-scroll data-scroll-speed="-1">
+        <h2>Find Your Hat</h2>
+        <p>Create mini game with Javascript</p>
+        <a
+          href="https://replit.com/@PanupongYapradi/Find-Your-Hat#index.js"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Demo Click
+        </a>
         <br />
         <br />
-        The first line of clothing you will see on this collection is for men.
-        The collection also includes three new styles for women.
+        <h2>Website BMI Calculator</h2>
+        <p>
+          Developed and designed BMI calculation using HTML ,CSS , Javascript,
+          and Bootstrap
+        </p>
+        <a
+          href="https://supel2nova.github.io/bmi-calculator.github.io/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Demo Click
+        </a>
         <br />
         <br />
-        Give it a try and experience a new look.
+        <h2>Jammming</h2>
+        <p>
+          Developed and designed create spotify playlist using React.js, HTML
+          ,CSS , Javascript
+        </p>
+        <a
+          href="http://jammming-pyco2.surge.sh/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Demo Click
+        </a>
+        <br />
+        <br />
+        <h2>Landing page with Tailwind</h2>
+        <p>
+          Developed and designed create landing page using React.js, HTML ,CSS ,
+          Javascript , Tailwind
+        </p>
+        <a
+          href="https://landing-page-tailwind-py.surge.sh/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Demo Click
+        </a>
       </Text>
     </Section>
   );

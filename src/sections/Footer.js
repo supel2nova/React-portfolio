@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 
 import Logo from "../assets/Svgs/star_white_48dp.svg";
@@ -111,6 +111,7 @@ const Bottom = styled.div`
 `;
 
 const Footer = () => {
+  const ref = useRef(null);
   const { scroll } = useLocomotiveScroll();
 
   const handleScroll = (id) => {
@@ -124,11 +125,11 @@ const Footer = () => {
   };
 
   return (
-    <Section>
+    <Section Section ref={ref} id="contact-me">
       <LogoContainer>
         <img data-scroll data-scroll-speed="2" src={Logo} alt="Wibe Studio" />
         <h3 data-scroll data-scroll-speed="-1">
-          Contect Me
+          Contact Me
         </h3>
       </LogoContainer>
       <FooterComponent
@@ -141,26 +142,65 @@ const Footer = () => {
       >
         <ul>
           <li>
-            <a href="https://github.com/supel2nova" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/supel2nova"
+              target="_blank"
+              rel="noreferrer"
+            >
               GITHUB
             </a>
           </li>
           <li>
-            <a href="https://google.com" target="_blank" rel="noreferrer">
+            <a
+              href="mailto: y.panupong.9125@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Email
             </a>
           </li>
           <li>
-            <a href="https://google.com" target="_blank" rel="noreferrer">
-              look book
+            <a
+              href="https://drive.google.com/file/d/1w_qPEzEG10ma0EhtfPvWYzS0ZCc_ARzE/view"
+              target="_blank"
+              rel="noreferrer"
+            >
+              RESUME
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/panupong-yapradith-013391191/" target="_blank" rel="noreferrer">
-            LINKEDIN
+            <a
+              href="https://www.linkedin.com/in/panupong-yapradith-013391191/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LINKEDIN
             </a>
           </li>
         </ul>
+        <Bottom>
+          <span
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-direction="horizontal"
+          >
+            &copy; {new Date().getFullYear()}. All Rights Reserved.
+          </span>
+          <span
+            data-scroll
+            data-scroll-speed="-2"
+            data-scroll-direction="horizontal"
+          >
+            Made with &hearts; by &nbsp;
+            <a
+              href="https://www.youtube.com/channel/UCLg985xghLOoBuft-lcpG7Q"
+              target="_blank"
+              rel="noreferrer"
+            >
+              ZEIVOX
+            </a>
+          </span>
+        </Bottom>
       </FooterComponent>
     </Section>
   );

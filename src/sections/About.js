@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-import img1 from "../assets/Images/1.webp";
+import img1 from "../assets/Images/21.jpg";
 import img2 from "../assets/Images/2.webp";
 import img3 from "../assets/Images/3.webp";
 
 const Section = styled.section`
   position: relative;
   min-height: 100vh;
-  width: 80vw;
+  width: 100vw;
   display: flex;
 
   margin: 0 auto;
@@ -34,6 +34,7 @@ const Title = styled.h1`
     font-size: ${(props) => `calc(${props.theme.fontBig} - 5vw)`};
     top: 0;
     left: 0;
+    color:white;
   }
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontxxxl};
@@ -41,16 +42,16 @@ const Title = styled.h1`
 `;
 const Left = styled.div`
   width: 50%;
-  font-size: ${(props) => props.theme.fontlg};
+  font-size: 2rem;
   font-weight: 300;
   position: relative;
   z-index: 5;
-  margin-top: 20%;
+  margin: 20% 5%;
 
   @media (max-width: 64em) {
     width: 80%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
     margin: 0 auto;
@@ -121,30 +122,19 @@ const About = () => {
     <Section id="fixed-target" className="about">
       <Title
         data-scroll
-        data-scroll-speed="-5"
+        data-scroll-speed="-6"
         data-scroll-direction="horizontal"
       >
-        About 
+        About
       </Title>
       <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
-        We're fashion studio based in california. We create unique designs that
-        will blow your mind. We also design unique jewellary pieces. Fashion is
-        an ART that can not be grasped by everyone.
-        <br />
-        <br />
-        We are very dedicated to making our products. We offer unique and
-        creative products to a wide range of people. We have a variety of
-        styles, but for most people, all of the options are in the box. We
-        specialize in making things that make you happy.
-        <br />
-        <br />
-        We strive to build on our vision. As a fashion label, we do our best to
-        create amazing experiences for all people. We are always looking to make
-        something that is easy for everyone.
+        Hi, I'm Yew. I was an engineer a few years ago. Now I'm interested in
+        technology and programming. I won’t stop exploring many different new
+        things and enjoy coding
       </Left>
       <Right>
         <img src={img1} alt="About Us" />
-        <img
+        {/* <img
           data-scroll
           data-scroll-speed="5"
           src={img2}
@@ -157,7 +147,7 @@ const About = () => {
           src={img3}
           alt="About Us"
           className="small-img-2"
-        />
+        /> */}
       </Right>
     </Section>
   );

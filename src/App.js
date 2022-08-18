@@ -3,18 +3,17 @@ import GlobalStyles from "./styles/GlobalStyles";
 import { dark } from "./styles/Themes";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useEffect, useRef, useState } from "react";
-import 'locomotive-scroll/dist/locomotive-scroll.css'
+import "locomotive-scroll/dist/locomotive-scroll.css";
 
 import Home from "./sections/Home";
 import { AnimatePresence } from "framer-motion";
 import About from "./sections/About";
-import Shop from "./sections/Shop";
-import ScrollTriggerProxy from './components/ScrollTriggerProxy';
 import Skills from "./sections/Skills";
+import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
+import Experience from "./sections/Experience";
 import NewArrival from "./sections/NewArrival";
-import Footer from './sections/Footer';
+import Footer from "./sections/Footer";
 import Loader from "./components/Loader";
-
 
 function App() {
   const containerRef = useRef(null);
@@ -25,8 +24,7 @@ function App() {
     setTimeout(() => {
       setLoaded(true);
     }, 3000);
-  }, [])
-  
+  }, []);
 
   return (
     <>
@@ -37,12 +35,12 @@ function App() {
           options={{
             smooth: true,
             // ... all available Locomotive Scroll instance options
-            smartphone:{
-              smooth:true,
+            smartphone: {
+              smooth: true,
             },
-            tablet:{
-              smooth:true,
-            }
+            tablet: {
+              smooth: true,
+            },
           }}
           watch={
             [
@@ -53,19 +51,24 @@ function App() {
           }
           containerRef={containerRef}
         >
-        <AnimatePresence>
+          <AnimatePresence>
         {loaded ? null : <Loader />}
         </AnimatePresence>
-        <ScrollTriggerProxy />
+          <ScrollTriggerProxy />
           <AnimatePresence>
-          <main className='App' data-scroll-container ref={containerRef}>
-            <Home />
-            <About />
-            <Skills />
-            <Shop />
-            <NewArrival />
-            <Footer />
-          </main>
+            <main className="App" data-scroll-container ref={containerRef}>
+              <Home />
+              {/* <div style={{ height: "100px" }}></div> */}
+              <About />
+              {/* <div style={{ height: "100px" }}></div> */}
+              <Experience />
+              {/* <div style={{ height: "100px" }}></div> */}
+              <Skills />
+              <div style={{ height: "100px" }}></div>
+              <NewArrival />
+              {/* <div style={{ height: "100px" }}></div> */}
+              <Footer />
+            </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>
       </ThemeProvider>

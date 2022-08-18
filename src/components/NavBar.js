@@ -88,7 +88,7 @@ const NavBar = () => {
     let elem = document.querySelector(id);
     setClick(!click);
     scroll.scrollTo(elem, {
-      offset: "-100",
+      offset: "0",
       duration: "2000",
       easing: [0.25, 0.0, 0.35, 1.0],
     });
@@ -133,32 +133,32 @@ const NavBar = () => {
           about
         </MenuItem>
         <MenuItem
-          onClick={() => handleScroll("#shop")}
+          onClick={() => handleScroll("#experience")}
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, Y: 0 }}
         >
-          Education
+          Experience
         </MenuItem>
         <MenuItem
-          onClick={() => handleScroll("#skill")}
+          onClick={() => handleScroll("#skills")}
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, Y: 0 }}
         >
           skills
         </MenuItem>
         <MenuItem
-          onClick={() => handleScroll("#shop")}
+          onClick={() => handleScroll("#new-arrival")}
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, Y: 0 }}
         >
           Project
         </MenuItem>
         <MenuItem
-          onClick={() => handleScroll("#new-arrival")}
+          onClick={() => handleScroll("#contact-me")}
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, Y: 0 }}
         >
-          Contect Me
+          Contact Me
         </MenuItem>
       </MenuItems>
     </NavContainer>
