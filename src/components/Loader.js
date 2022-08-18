@@ -47,12 +47,12 @@ const Container = styled(motion.div)`
 `;
 
 const Text = styled(motion.span)`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: 2rem;
   color: ${(props) => props.theme.text};
   padding-top: 0.5rem;
 
   @media (max-width: 48em) {
-    font-size: ${(props) => props.theme.fontlg};
+    font-size: 2rem;
   }
 `;
 
@@ -121,7 +121,7 @@ const Loader = () => {
         </g>
       </svg>
       <Text variants={textVariants} initial="hidden" animate="visible">
-        YEW
+        Loading......
       </Text>
     </Container>
   );

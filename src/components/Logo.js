@@ -33,9 +33,9 @@ const Container = styled.div`
 `;
 
 const Text = styled(motion.span)`
-  font-size: ${(props) => props.theme.fontlg};
+  font-size: 2rem;
   color: ${(props) => props.theme.text};
-  margin-top:2rem;
+  margin-top:1rem;
   margin-left:3rem;
 `;
 
