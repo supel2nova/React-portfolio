@@ -184,7 +184,11 @@ const Footer = () => {
             data-scroll-speed="2"
             data-scroll-direction="horizontal"
           >
-            &copy; {new Date().getFullYear()}. All Rights Reserved.
+            <a
+              href="https://playcanv.as/b/LJ8vYCl1/"
+              target="_blank"
+              rel="noreferrer"
+            >Mini Game PanuJump</a>
           </span>
           <span
             data-scroll
