@@ -161,7 +161,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1w_qPEzEG10ma0EhtfPvWYzS0ZCc_ARzE/view"
+              href="https://www.canva.com/design/DAFGOF4PZVA/x_V7a38PQ0VpCqps_4R_6g/view?utm_content=DAFGOF4PZVA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
               target="_blank"
               rel="noreferrer"
             >
