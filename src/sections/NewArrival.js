@@ -210,9 +210,9 @@ const NewArrival = () => {
 
       <Container ref={ScrollingRef}>
         <Item>
+        <Product img={img3} title="Find Your Hat" />
           <Product img={img1} title="BMI Calculator" />
-          <Product img={img2} title="Jammming" />
-          <Product img={img3} title="Find Your Hat" />
+          <Product img={img2} title="Jammming" />         
           <Product img={img4} title="Landing page with Tailwind" />
         </Item>
       </Container>
