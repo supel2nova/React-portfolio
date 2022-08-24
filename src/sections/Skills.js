@@ -18,6 +18,8 @@ import img10 from "../assets/Images/14.png";
 import img11 from "../assets/Images/15.png";
 import img12 from "../assets/Images/19.png";
 import img13 from "../assets/Images/20.png";
+import img14 from "../assets/Images/21.png";
+
 
 const Section = styled.section`
   min-height: 100vh;
@@ -223,9 +225,10 @@ const Skills = () => {
         <Product img={img2} title="CSS" />
         <Product img={img3} title="Javascript" />
         <Product img={img4} title="BootStrap" />
+        <Product img={img6} title="MongoDB" />
+        <Product img={img14} title="Express" />
         <Product img={img11} title="ReactJS" />
         <Product img={img5} title="NodeJS" />
-        <Product img={img6} title="MongoDB" />
         <Product img={img7} title="My SQL" />
         <Product img={img9} title="GitHub" />
         <Product img={img10} title="Git" />
