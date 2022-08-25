@@ -185,7 +185,7 @@ const Footer = () => {
             data-scroll-direction="horizontal"
           >
             <a
-              href="https://playcanv.as/p/dohnM1HW/"
+              href="https://playcanv.as/b/w68aWUv2/"
               target="_blank"
               rel="noreferrer"
             >Mini Game PanuJump</a>
