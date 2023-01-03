@@ -7,6 +7,7 @@ import img1 from "../assets/Images/project01.png";
 import img2 from "../assets/Images/project02.png";
 import img3 from "../assets/Images/project03.png";
 import img4 from "../assets/Images/project04.png";
+import img5 from "../assets/Images/project05.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -210,10 +211,11 @@ const NewArrival = () => {
 
       <Container ref={ScrollingRef}>
         <Item>
-        <Product img={img3} title="Find Your Hat" />
+          <Product img={img3} title="Find Your Hat" />
           <Product img={img1} title="BMI Calculator" />
-          <Product img={img2} title="Jammming" />         
+          <Product img={img2} title="Jammming" />
           <Product img={img4} title="Landing page with Tailwind" />
+          <Product img={img5} title="Web Blog" />
         </Item>
       </Container>
 
@@ -264,6 +266,21 @@ const NewArrival = () => {
         </p>
         <a
           href="https://landing-page-tailwind-py.surge.sh/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Demo Click
+        </a>
+        <br />
+        <br />
+        <h2>Web Blog</h2>
+        <p>
+          Created a Full-stack web application with full CRUD functionality
+          built using react, mongoDB, and mongoose where users create the
+          articles.
+        </p>
+        <a
+          href="https://blog-panu.vercel.app/"
           target="_blank"
           rel="noreferrer"
         >
